@@ -1,8 +1,9 @@
 
 const conn = require("../db/connection")
+const crypto = require("crypto")
 
 module.exports = {
-    async create(Request,response){
+    async create(request,response){
         const id = crypto.randomBytes(4).toString("HEX");
         const {name,email,whatsapp,city,UF} = request.body;
         
