@@ -1,5 +1,6 @@
 const express = require('express');
-const crypto = require('crypto');
+
+const {celebrate,Segments,Joi} = require('celebrate');
 
 const OngController = require('./controllers/ongController')
 const CaseController = require('./controllers/caseController')
